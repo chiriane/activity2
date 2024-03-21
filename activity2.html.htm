@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Page title</title>
+    <style>
+        body {
+            background-color: #eba2dfc7;
+            font-family: 'Inconsolata', monospace;
+            text-align: center;
+
+        }
+
+        main {
+            text-align: center;
+            margin-top: 130px;
+            font-size: 30px;
+        }
+
+        header {
+            text-align: center;
+            font-size: 30px;
+        }
+
+
+        .jdn {
+            display: inline-block;
+            background: transparent;
+            position: relative;
+            border: none;
+            padding: 1em 1.5em;
+            color: #000000;
+            transition: .5s ease;
+            text-transform: uppercase;
+        }
+
+        .jdn::before {
+            content: "";
+            position: absolute;
+            left: 0;
+            bottom: 0;
+            height: 2px;
+            width: 0;
+            background-color: #4f4f4f;
+            transition: .5s ease;
+        }
+
+        .jdn:hover {
+            background-color: #4f4f4f;
+            color: white;
+            transition-delay: .7s;
+        }
+
+        .jdn:hover::before {
+            width: 100%;
+        }
+
+        .jdn::after {
+            content: "";
+            position: absolute;
+            left: 0;
+            bottom: 0;
+            height: 0;
+            width: 100%;
+            color: white;
+            background-color: #4f4f4f;
+            transition: .4s ease;
+        }
+
+        .jdn:hover::after {
+            height: 100% transition 0.4s;
+            color: aliceblue;
+        }
+
+        a {
+            text-decoration: none;
+            color: rgb(150, 36, 102);
+            display: inline-block;
+            margin-left: 120px;
+            padding-right: 70px;
+        }
+
+        ul {
+            background-color: #40ccf0d0;
+        }
+    </style>
+</head>
+<title> </title>
+
+<body>
+    <header>
+        <h2 style="font-family: 'Courier New', Courier, monospace;">ACTIVITY #2</h2>
+    </header>
+    <ul>
+
+        <a href="activity2.html.htm"><span class="jdn">JavaScript Arithmetic</span></a>
+
+    </ul>
+    <main>
+        <script type="text/javascript">
+            var a
+            var b
+            var c
+            
+
+            a = prompt("Please enter a number", 0)
+            b = prompt("Please enter a number", 0)
+            c = parseFloat(a) + parseFloat(b)
+   
+
+            document.write("This is the first value ", a)
+            document.write("</br>This is the second value ", b)
+            document.write("</br>This is the sum of the two value ", c)
+            
+        </script>
+    </main>
+</body>
+
+</html>
